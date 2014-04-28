@@ -1,0 +1,6 @@
+meta_folder: ./data/meta
+shows_folder: ./data/subtitles
+shows:
+    - dexter
+    - the.big.bang.theory
+    - game.of.thrones
