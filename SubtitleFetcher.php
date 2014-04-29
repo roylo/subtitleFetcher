@@ -12,7 +12,8 @@ class SubtitleFetcher
 
     public function __construct()
     {
-        $config = new Axial_Configuration_Yaml('conf/SubtitleFetcher.yaml', true);
+        $conf_path = dirname(__FILE__) . '/conf/SubtitleFetcher.yaml';
+        $config = new Axial_Configuration_Yaml($conf_path, true);
         $this->_shows_name = $config->shows->toArray();
         $this->_meta_folder = $config->meta_folder;
         $this->_shows_folder = $config->shows_folder;
